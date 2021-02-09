@@ -1,0 +1,62 @@
+body {
+    width: 90%;
+    margin: 0% auto;
+}
+img {
+    background-color: blue;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    width: 75%;
+}
+figure {
+    background-color: white;
+    border-radius: 25%;
+    text-align: center;
+}
+#gallery {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: 
+    "img img img img img"
+    "img img img img img ";
+}
+@media screen and (max-width: 2000px) {
+    img {
+        width : 75%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    img {
+      width: 50%;
+    }
+    #gallery {
+        grid-template-areas: 
+        "img img"
+        "img img"
+        "img img"
+        "img img"
+        "img img";
+    }
+ }
+@media screen and (max-width: 640px) 
+{
+    img {
+       width: 50%;
+   }
+    #gallery {
+        grid-template-areas: 
+        "img"
+        "img"
+        "img"
+        "img"
+        "img"
+        "img"
+        "img"
+        "img"
+        "img"
+        "img";
+    }
+
+} 
+
